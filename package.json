@@ -1,0 +1,64 @@
+{
+  "name": "json-schema-editor-vue-sensitive",
+  "version": "1.1.4",
+  "author": "liucongyu",
+  "description": "基于 json-schema-editor-vue，新增敏感信息按钮",
+  "keywords": [
+    "vue", "json-schema", "编辑器", "敏感字段"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zyqwst/json-schema-editor-vue"
+  },
+  "homepage": "http://json-schema.sviip.com/",
+  "license": " Apache-2.0 License",
+  "main": "lib/json-schema-editor-vue.umd.min.js",
+  "private": false,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --name json-schema-editor-vue --dest lib packages/index.js",
+    "analyzer": "cross-env analyzer=true vue-cli-service build"
+  },
+  "dependencies": {
+    "ant-design-vue": "^1.7.2",
+    "core-js": "^3.6.5",
+    "generate-schema": "^2.6.0",
+    "vue": "^2.6.11",
+    "vue-codemirror": "^4.0.6"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.4.0",
+    "@vue/cli-plugin-eslint": "~4.4.0",
+    "@vue/cli-service": "~4.4.0",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-import": "^1.13.0",
+    "babel-plugin-lodash": "^3.3.4",
+    "cross-env": "^7.0.3",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "lodash-webpack-plugin": "^0.11.6",
+    "vue-template-compiler": "^2.6.11",
+    "webpack-bundle-analyzer": "^4.8.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
