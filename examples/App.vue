@@ -159,7 +159,6 @@ handleImportJson() {
     // 敏感信息方法
     handleSensitive(value) {
       console.log(value, "schema, parent11");
-      console.log('测试git')
       // 示例：弹出对话框，修改当前节点的 title 和 remark
       // this.$dialog.confirm({
       //   title: `编辑敏感字段：${value.key}`,
